@@ -1,38 +1,71 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html, body {
+  background-color: #f0f0f0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  height: 100vh; display: flex; flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  position: relative;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px; padding: 0 5%;
+  background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header__back {
+  display: block; width: 25px; height: 25px;
+}
+.header__logo {
+  position: absolute; left: 50%; top: 50%;
+  max-width: 50%; max-height: 40px; padding-right: 20px;
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+  flex-grow: 1;
+  overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  flex-shrink: 0;
+  height: 60px;
 }
+.nav {
+  position: fixed; bottom: 0; left: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; height: 60px; padding: 0 10%;
+  background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.nav__item {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.nav__item-home {
+
+}
+.nav__item-home svg {width: 30px; height: 30px; fill: #222;}
+.nav__item-new {
+  display: flex; justify-content: center; align-items: center;
+  padding: 8px;
+  border: 2px solid #222; border-radius: 12px;
+}
+.nav__item-new svg {width: 16px; height: 16px; fill: #222;}
+.nav__item-profile {
+  position: relative;
+  display: block; width: 34px; height: 34px;
+  border-radius: 50%; overflow: hidden;
+  background-color: #f0f0f0;
+}
+.nav__item-profile svg {
+  position: absolute; left: 50%; bottom: -2px;
+  width: 34px; height: 34px;
+  transform: translateX(-50%); fill: #222;
 }

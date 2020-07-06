@@ -1,0 +1,102 @@
+.calendarNew {
+    display: flex; justify-content: center; align-items: center;
+    height: 100%; width: 100%;
+}
+.calendarNew__form {
+    position: relative;
+    display: flex; flex-direction: column;
+    width: 85%; max-width: 400px;
+    background-color: #fff; box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    transform: scale(0.9); transition: 0.18s;
+}
+.calendarNew__form.is-ready {
+    transform: scale(1);
+}
+.calendarNew__form::before, .calendarNew__form::after {
+    position: absolute; content: ''; right: -20px; top: -20px; z-index: 1;
+    width: 40px; height: 40px;
+    background-color: #f0f0f0; border: 4px solid #f0f0f0;
+    transform: rotate(45deg);
+}
+.calendarNew__form::after {right: auto; top: auto; left: -20px; bottom: -20px;}
+
+.calendarNew__form-heading {
+    padding: 20px 30px;
+    background-color: #f4f4f4; border-bottom: 1px solid #f0f0f0;
+}
+
+.calendarNew__form-title {
+
+}
+.calendarNew__form-title p {
+    margin: 5px;
+    font-size: 24px; font-weight: 300;
+}
+.calendarNew__form-title input {
+    max-width: 100%; padding: 5px;
+    text-align: center; font-size: 24px; font-weight: 700; text-transform: uppercase;
+    border: 2px solid #222; border-width: 0 0 2px 0; background-color: transparent;
+}
+
+.calendarNew__form-body {
+    padding: 10px 30px 30px;
+}
+
+.calendarNew__form-color {
+    display: flex; align-items: center; justify-content: center;
+}
+.calendarNew__form-color p {
+    margin-right: 15px;
+    font-size: 20px; font-weight: 300;
+}
+.calendarNew__form-color select {
+    font-size: 20px; font-weight: 700; text-transform: capitalize;
+}
+
+
+.calendarNew__form-notifications {
+    display: flex; justify-content: center; align-items: center;
+}
+.calendarNew__form-notifications input {
+    margin-top: 6px;
+}
+.calendarNew__form-notifications p {
+    margin-right: 15px;
+    font-size: 20px; font-weight: 300;
+}
+
+.calendarNew__form-submit {
+    width: 150px; height: 40px; margin: 20px auto 0;
+    border: 3px solid #b61827; background-color: #b61827; box-shadow: 0 1px 12px rgba(0,0,0,0.2);
+    color: #ffffff; font-size: 18px; text-transform: uppercase; font-weight: 300;
+}
+.calendarNew__form-submit:focus {color: #b61827; background-color: #ffffff !important;}
+
+.calendarNew.red .calendarNew__form-title input {border-color: #b61827;}
+.calendarNew.red .calendarNew__form-color select {background-color: #b61827; color: #ff867c;}
+.calendarNew.red .calendarNew__form-submit {background-color: #b61827; border-color: #b61827;}
+.calendarNew.red .calendarNew__form-submit:focus {color: #b61827;}
+.calendarNew.purple .calendarNew__form-title input {border-color: #790e8b;}
+.calendarNew.purple .calendarNew__form-color select {background-color: #790e8b; color: #df78ef;}
+.calendarNew.purple .calendarNew__form-submit {background-color: #790e8b; border-color: #790e8b;}
+.calendarNew.purple .calendarNew__form-submit:focus {color: #790e8b;}
+.calendarNew.indigo .calendarNew__form-title input {border-color: #26418f;}
+.calendarNew.indigo .calendarNew__form-color select {background-color: #26418f; color: #8e99f3;}
+.calendarNew.indigo .calendarNew__form-submit {background-color: #26418f; border-color: #26418f;}
+.calendarNew.indigo .calendarNew__form-submit:focus {color: #26418f;}
+.calendarNew.cyan .calendarNew__form-title input {border-color: #0095a8;}
+.calendarNew.cyan .calendarNew__form-color select {background-color: #0095a8; color: #6ff9ff;}
+.calendarNew.cyan .calendarNew__form-submit {background-color: #0095a8; border-color: #0095a8;}
+.calendarNew.cyan .calendarNew__form-submit:focus {color: #0095a8;}
+.calendarNew.green .calendarNew__form-title input {border-color: #338a3e;}
+.calendarNew.green .calendarNew__form-color select {background-color: #338a3e; color: #98ee99;}
+.calendarNew.green .calendarNew__form-submit {background-color: #338a3e; border-color: #338a3e;}
+.calendarNew.green .calendarNew__form-submit:focus {color: #338a3e;}
+.calendarNew.yellow .calendarNew__form-title input {border-color: #c9bc1f;}
+.calendarNew.yellow .calendarNew__form-color select {background-color: #c9bc1f; color: #ffff8b;}
+.calendarNew.yellow .calendarNew__form-submit {background-color: #c9bc1f; border-color: #c9bc1f;}
+.calendarNew.yellow .calendarNew__form-submit:focus {color: #c9bc1f;}
+.calendarNew.orange .calendarNew__form-title input {border-color: #c77800;}
+.calendarNew.orange .calendarNew__form-color select {background-color: #c77800; color: #ffd95b;}
+.calendarNew.orange .calendarNew__form-submit {background-color: #c77800; border-color: #c77800;}
+.calendarNew.orange .calendarNew__form-submit:focus {color: #c77800;}
