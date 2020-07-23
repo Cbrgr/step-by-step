@@ -122,10 +122,6 @@ class CalendarNew extends React.Component {
                                         <option className="orange" value="orange">orange</option>
                                     </select>
                                 </div>
-                                <label className="calendarNew__form-notifications">
-                                    <p>Activer les notifications :</p>
-                                    <input type="checkbox" onChange={e => {this.setState({notifications: e.target.checked})}} />
-                                </label>
                                 <button className="calendarNew__form-submit" onClick={() => {
                                     console.log('démarrer');
                                     console.log(this.state.today)
